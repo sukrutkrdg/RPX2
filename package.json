@@ -1,0 +1,35 @@
+{
+  "name": "rpx-project",
+  "version": "1.0.0",
+  "description": "Reputation Proof of Experience (RPX) Project",
+  "scripts": {
+    "dev": "cd frontend && npx next dev",
+    "oracle": "ts-node backend/OracleService/OracleServer.ts",
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.ts --network baseSepolia",
+    "setup": "npx hardhat run scripts/setup.ts --network baseSepolia"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@types/node": "^24.10.0",
+    "@types/react": "19.2.2",
+    "hardhat": "^2.27.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0",
+    "@tanstack/react-query": "^5.90.7",
+    "@types/express": "^4.17.21",
+    "@wagmi/connectors": "^6.1.4",
+    "date-fns": "^4.1.0",
+    "dotenv": "^17.2.3",
+    "ethers": "^6.15.0",
+    "express": "^4.19.2",
+    "next": "^14.2.33",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "viem": "^2.38.6",
+    "wagmi": "^2.19.2"
+  }
+}

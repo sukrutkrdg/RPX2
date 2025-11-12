@@ -1,0 +1,20 @@
+{
+    "targetChainId": 84532, 
+    "baseFeeEth": "0.001", 
+    "minScoreForVerification": 70,
+
+    "feeReceiver": "0x0a55983b15c4d75c5d65629326c0dc26a94f418a",
+    "oracleApiUrl": "http://localhost:3001",
+
+    "proofWeights": {
+        "recoveryTransfer": 40,
+        "transactionConsistency": 30,
+        "walletAge": 10,
+        "protocolInteractions": 20
+    },
+
+    "oldWalletInactivityPeriodHours": 72,
+    "recoveryTransferMaxTimeHours": 48,
+    
+    "maxTransactionsToFetch": 5000
+}

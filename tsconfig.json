@@ -1,0 +1,22 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "NodeNext", // ESM modüllerini Node.js için kullan
+    "moduleResolution": "NodeNext", // Modül çözümleme kurallarını ayarlar
+    "rootDir": "./", 
+    "outDir": "./dist",
+    
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true // JSON importlarına (assert { type: "json" }) izin verir
+  },
+  "include": [
+    "./scripts/**/*.ts", 
+    "./backend/**/*.ts", // Tüm backend dosyalarını dahil et
+    "./hardhat.config.ts"
+  ],
+  "exclude": ["node_modules"]
+}

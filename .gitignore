@@ -1,0 +1,32 @@
+node_modules
+# --- Proje Bağımlılıkları ve Yapıları ---
+/node_modules
+/npm-debug.log
+/yarn-error.log
+/yarn-debug.log
+
+# --- GİZLİ ve Hassas Bilgiler (CRITICAL) ---
+# Özel anahtarlar, API anahtarları ve RPC URL'leri içerir. ASLA PAYLAŞILMAMALI.
+.env
+.env.local
+.env.development.local
+.env.production.local
+
+# --- Hardhat ve Solidity Çıktıları ---
+/artifacts          # Derlenmiş sözleşme ABI ve Bytecode'ları
+/cache              # Hardhat önbellek dosyaları
+/coverage
+/coverage.json
+/typechain-types/   # TipSafe entegrasyon çıktıları
+
+# --- Next.js / Frontend Çıktıları ---
+/.next/             # Next.js tarafından oluşturulan build/derleme dizini
+/out/               # Statik dışa aktarma (export) dizini
+/dist/              # Genel derleme dizini
+/public/build/      # Frontend varlıklarının derlenmiş kopyaları
+
+# --- IDE ve İşletim Sistemi Dosyaları ---
+.vscode/            # Visual Studio Code ayarları (opsiyonel)
+*.log
+.DS_Store           # macOS özel dosyaları
+thumbs.db           # Windows özel dosyaları
